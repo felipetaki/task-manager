@@ -3,6 +3,6 @@
 
 <% @tasks.each do |task| %>
 
-  <p><%= link_to task.title, tasks_path(task) %></p>
+  <p><%= link_to task.title, task_path(task) %></p>
 
 <% end %>

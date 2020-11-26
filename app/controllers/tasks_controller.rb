@@ -5,6 +5,6 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
   def show
-    @restaurants = Restaurant.find(params[:id])
+    @tasks = Task.find(params[:id])
   end
 end
