@@ -10,11 +10,11 @@ class TasksController < ApplicationController
   end
 
   def show
-    @task = Task.find(params[:task])
+    @task = Task.find(params[:id])
   end
 
   def create
-    @task = Task.new(params[:restaurant])
+    @task = Task.new(task_params)
     @task.save
   end
 
